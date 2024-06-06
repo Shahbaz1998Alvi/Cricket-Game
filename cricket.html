@@ -43,7 +43,7 @@
   ">Ball</button>
 
   <button onclick="
-    generateComputerChoice();
+    computerChoice = generateComputerChoice();
     
   if (computerChoice === 'Ball') {
     resultMsg = 'Computer has won';
@@ -61,15 +61,13 @@
       function generateComputerChoice() {
         //This will generate random number between 0 and 3
         let randomNumber = Math.random() * 3;
-        let choice;
         if (randomNumber > 0 && randomNumber <= 1) {
-        choice = 'Bat';
+        return 'Bat';
         } else if (randomNumber > 1 && randomNumber <= 2) {
-        choice = 'Ball';
+        return 'Ball';
         } else {
-        choice = 'Stump'
+        return 'Stump'
     }
-         return choice;
       }
   </script>
   </body>
