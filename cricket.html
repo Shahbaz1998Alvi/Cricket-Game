@@ -69,6 +69,32 @@
         return 'Stump'
     }
       }
+
+      function getResult(userMove, computerMove) {
+        if (userMove === 'Bat'){
+         if (computerMove === 'Ball'){
+            return 'User won.';
+         } else if (computerMove === 'Bat') {
+         return `It's a tie`;
+         } else if (computerMove === 'Stump') {
+         return 'Computer has won';
+         }
+
+          } else if (userMove ==='Ball') {
+
+            if (computerMove === 'Ball') {
+            return `It's a tie`;
+         } else if (computerMove === 'Bat') {
+          return 'Computer has won';
+         } else if (computerMove === 'Stump') {
+          return 'User Won';
+         }
+         } else {
+
+         }
+         }
+        
+      
   </script>
   </body>
   </html>
