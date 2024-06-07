@@ -1,8 +1,24 @@
 body {
     text-align: center;
-  }
-  
-  .choice-button {
+    background-image: url('images/background.png');
+    background-size: null;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+.choice-button {
     height: 100px;
     width: 100px;
     border: none;
@@ -10,8 +26,8 @@ body {
     background-color: rgb(82, 219, 117);
     border-radius: 50px;
     cursor: pointer;
-  }
+}
 
-  .choice-image {
+.choice-image {
     height: 75px;
-  }
+}
